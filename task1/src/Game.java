@@ -1,5 +1,5 @@
 public class Game {
-    
+
     private final Counter counter;
 
     private final Guessing guessing = new Guessing();
@@ -14,6 +14,7 @@ public class Game {
         generatedNumber = generator.generateUniqueNumber();
         counter = new Counter(generatedNumber);
         System.out.println("Число сгенерировано.\n");
+        System.out.printf("%d", generatedNumber);
     }
 
     public void run() {
