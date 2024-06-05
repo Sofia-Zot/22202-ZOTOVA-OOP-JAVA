@@ -9,9 +9,14 @@ import java.util.List;
 public class Add extends ArithmeticOperation {
     @Override
     public void execute(CalculatorContext context, List<String> positionalArgs) throws CommandsException {
-        if (context.getStack().size() < 2) {
-            throw new IllegalAccessException("not sufficient amount of values in stack");
-        }
+        super.execute(context, positionalArgs);
+
+        double n1 = context.getStack().pop();
+        double n2 = context.getStack().pop();
+
+        double result = n1 + n2;
+
+        context.getStack().push(result);
 
         context.getStack().push(context.getStack().pop() + context.getStack().pop());
     }
