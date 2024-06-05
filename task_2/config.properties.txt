@@ -1,0 +1,9 @@
+ADD=commands.Add
+SUB=commands.SubCommand
+MUL=commands.Mul
+DIV=commands.Div
+SQRT=commands.Sqrt
+DEFINE=commands.Define
+POP=commands.Pop
+PRINT=commands.Print
+PUSH=commands.Push
