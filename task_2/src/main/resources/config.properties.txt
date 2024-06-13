@@ -1,0 +1,9 @@
++=src.operations.Add
+-=src.operations.Dif
+*=src.operations.Mul
+/=src.operations.Div
+SQRT=src.operations.Sqrt
+DEFINE=src.operations.Define
+POP=src.operations.Pop
+PRINT=src.operations.Print
+PUSH=src.operations.Push
